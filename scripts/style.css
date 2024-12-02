@@ -1,0 +1,365 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 100;
+}
+nav a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #ffffff;
+}
+header {
+    background-image: url(https://cachizer1.2gis.com/autosite/68f49471-62a7-42ce-9425-2e252655e3ba.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 150px 0;
+    position: relative;
+    margin-top: 60px;
+}
+header:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+header h1, header p {
+    position: relative;
+    z-index: 1;
+}
+.content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+}
+.main_header {
+    text-align: center;
+}
+.main_header p{
+    font-size: 27px;
+}
+
+.first_three_column {
+    display:flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center;
+}
+.column {
+    width: 30%;
+}
+.service {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.service-icon {
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+}
+.service-text {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+}
+
+.center-image {
+    max-width: 40%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+.left-column-option img{
+    width: 100px;
+    height: 100px;
+
+}
+.rounded_lines {
+    position: relative;
+}
+
+.center-column-option img {
+    width: 100px;
+    height: 100px;
+
+}
+
+.right-column-option img {
+    width: 100px;
+    height: 100px;
+
+}
+
+.left-column-option, .center-column-option, .right-column-option {
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.header-option, .description-option, .price {
+    text-align: center;
+    width: 100%;
+}
+
+.options {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 40px;
+    gap: 60px;
+    margin-top: 30px;
+}
+.res-butt {
+    padding-left: auto;
+    padding-right: auto;
+    border:  solid rgb(125, 110, 222);
+    border-radius: 15px;
+    padding: 25px;
+    font-size: 1.25em;
+    font-weight: bold;
+    background: linear-gradient(rgb(85, 64, 224), rgb(125, 110, 222));
+    width: 100%;
+}
+
+.price {
+    margin-top: auto;
+} 
+
+
+
+.lines{
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height:100%;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.description-option {
+    overflow-wrap: break-word;
+}
+
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 40px;
+}
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.carousel-item {
+    min-width: 300px;
+    margin-right: 20px;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.carousel-item .price {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.carousel-control {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 4px solid #000;
+}
+blockquote {
+    background: #f0f0f0;
+    border-left: 4px solid #000;
+    padding: 15px;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+
+
+body {
+  color: #333;
+  background: #fcfcfc;
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+}
+
+.faq-header{
+  font-size: 42px;
+  border-bottom: 1px dotted #ccc;
+  padding: 24px;
+  display: flex;
+  justify-content: flex-start;
+  margin: auto;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.faq-content {
+  margin: 0 auto;
+}
+
+.faq-question {
+  padding: 20px 0;
+  border-bottom: 1px dotted #ccc;
+}
+
+.panel-title {
+  font-size: 24px;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 10px 10px 0 48px;
+  display: block;
+  cursor: pointer;
+}
+
+.panel-content {
+  font-size: 20px;
+  padding: 0px 14px;
+  margin: 0 40px;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  -o-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.panel:checked ~ .panel-content{
+  height: auto;
+  opacity: 1;
+  padding: 14px;
+}
+
+.plus {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 4px;
+  z-index: 5;
+  font-size: 42px;
+  line-height: 100%;
+  -webkit-user-select: none;    
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: .2s ease;
+  -moz-transition: .2s ease;
+  -o-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.panel:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.panel {
+  display: none;
+}
+
+
+@media (max-width:1000px) {
+    .center-image {
+        
+    }
+}
